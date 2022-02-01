@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import Button from './components/Button';
 
 class App extends React.Component {
 
@@ -31,7 +32,12 @@ class App extends React.Component {
 
   render() {
     return (
+      <div>
+      </div>,
       <div className="App" >
+        <Button onClick={this.selectFrance} isSelected={this.state.activeTabs === 'france' ? true : false}>France</Button>
+        <Button onClick={this.selectFrance} isSelected={this.state.activeTabs === 'france' ? true : false}>Brazil</Button>
+        <Button onClick={this.selectFrance} isSelected={this.state.activeTabs === 'france' ? true : false}>Croatia</Button>
         	{this.state.loading ? (
 					<p>Loading...</p>
 				) : (
