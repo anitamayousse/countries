@@ -63,9 +63,9 @@ class App extends React.Component {
 					<p>Loading...</p>
 				) : (
           <div>
-          <Button onClick={this.getCountry} isSelected={this.state.name === 'france'}>France</Button>
-          <Button onClick={this.getCountry} isSelected={this.state.name === 'brazil'}>Brazil</Button>
-          <Button onClick={this.getCountry} isSelected={this.state.name === 'croatia'}>Croatia</Button>
+          <Button onClick={() => this.getCountry("france")}>France</Button>
+          <Button onClick={() => this.getCountry("brazil")}>Brazil</Button>
+          <Button onClick={() => this.getCountry("france")}>Croatia</Button>
 
             <Card
                 flag={this.state.flag}
