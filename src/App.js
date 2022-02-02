@@ -65,7 +65,7 @@ class App extends React.Component {
           <div>
           <Button onClick={() => this.getCountry("france")}>France</Button>
           <Button onClick={() => this.getCountry("brazil")}>Brazil</Button>
-          <Button onClick={() => this.getCountry("france")}>Croatia</Button>
+          <Button onClick={() => this.getCountry("croatia")}>Croatia</Button>
 
             <Card
                 flag={this.state.flag}
