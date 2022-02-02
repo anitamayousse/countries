@@ -5,9 +5,7 @@ class Button extends Component {
     render() {
         return (
             <button
-                onClick={this.props.onClick} 
-                className={this.props.isSelected === true?  "btn btn-primary" : "btn btn-light"}
-                type="button">
+                onClick={this.props.onClick} >
                     {this.props.children}
             </button>
         )
