@@ -5,7 +5,7 @@ class Card extends Component {
     render() {
         return (
             <div>
-            {this.props.flag}
+            <img src={this.props.flag} alt="flag"/>
             <p>{this.props.name}</p>
             <p>{this.props.capital}</p>
             <p>{this.props.population}</p>
